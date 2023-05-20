@@ -1,22 +1,18 @@
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 
-import Home from "./Components/Home";
-import About from "./Components/About";
+import HomePage from "./Components/HomePage";
+import LoginPage from "./Components/LoginPage";
+import RegisterPage from "./Components/RegisterPage";
+import Navbar from "./Components/Navbar";
+
 function App() {
   return (
     <>
-      <ul className="flex justify-center gap-2 mt-3">
-        <li className="text-slate-900 hover:opacity-70">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="text-slate-900 hover:opacity-70">
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
-
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </>
   );
