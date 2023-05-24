@@ -8,7 +8,7 @@ export default function Register() {
           <img
             src="./img/bg-1.png"
             alt="hero"
-            className="absolute bottom-0 right-0 object-fill z-1"
+            className="absolute top-0 right-0 h-full z-1"
           />
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-dark-blue opacity-40 z-2"></div>
           <div className="flex flex-col justify-center relative z-10">
